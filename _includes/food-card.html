@@ -1,0 +1,37 @@
+<div class="food-card">
+  {% if include.image %}
+    <div class="card-image">
+      <img src="{{ include.image | relative_url }}" alt="{{ include.title }}">
+    </div>
+  {% endif %}
+
+  <div class="card-content">
+    <h3 class="card-title">{{ include.title }}</h3>
+
+    {% if include.category %}
+      <span class="card-category">{{ include.category }}</span>
+    {% endif %}
+
+    {% if include.price %}
+      <span class="card-price">{{ include.price }}</span>
+    {% endif %}
+
+    {% if include.description %}
+      <p class="card-description">{{ include.description | truncate: 120 }}</p>
+    {% endif %}
+
+    {% if include.location %}
+      <div class="card-location">
+        <span class="icon">📍</span>
+        <span>{{ include.location }}</span>
+      </div>
+    {% endif %}
+
+    {% if include.rating %}
+      <div class="card-rating">
+        <span class="rating-stars">{{ '★' * include.rating }}{{ '☆' * (5 - include.rating) }}</span>
+        <span class="rating-text">{{ include.rating }}/5</span>
+      </div>
+    {% endif %}
+  </div>
+</div>

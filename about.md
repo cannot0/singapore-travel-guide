@@ -1,0 +1,115 @@
+---
+layout: default
+title: 关于我们
+subtitle: 了解新加坡旅游指南项目
+---
+
+<div class="page-container">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    <p class="page-subtitle">{{ page.subtitle }}</p>
+  </header>
+
+  <div class="about-content">
+    <section class="about-section">
+      <h2>项目介绍</h2>
+      <p>
+        新加坡旅游指南是一个基于Jekyll构建的静态网站项目，旨在为游客提供全面、实用的新加坡旅游信息。
+        我们希望通过这个网站，帮助每一位计划前往新加坡的游客更好地了解这座城市，规划完美的旅程。
+      </p>
+      <p>
+        新加坡作为东南亚的现代化都市，以其整洁的市容、多元的文化、丰富的美食和便利的交通而闻名于世。
+        无论是首次到访还是重游故地，新加坡都能给您带来不同的惊喜和体验。
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h2>项目特点</h2>
+      <p>
+        本项目具有以下特点：
+      </p>
+      <ul>
+        <li><strong>内容全面：</strong>涵盖景点、美食、交通、行程规划等多个方面</li>
+        <li><strong>信息实用：</strong>提供具体的地址、价格、营业时间等实用信息</li>
+        <li><strong>界面友好：</strong>采用响应式设计，支持各种设备浏览</li>
+        <li><strong>易于维护：</strong>基于Jekyll静态站点生成器，便于更新和部署</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2>技术实现</h2>
+      <p>
+        本项目使用以下技术栈：
+      </p>
+      <ul>
+        <li><strong>Jekyll：</strong>静态站点生成器，支持Markdown和Liquid模板</li>
+        <li><strong>HTML5/CSS3：</strong>现代网页标准，响应式布局</li>
+        <li><strong>JavaScript：</strong>交互功能和动态效果</li>
+        <li><strong>GitHub Pages：</strong>免费托管和自动部署</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2>团队成员</h2>
+      <p>
+        本项目由5人团队协作完成，每位成员负责不同的模块：
+      </p>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="team-member-avatar">👤</div>
+          <h4>成员A（组长）</h4>
+          <p>负责项目统筹、首页设计和文档整理</p>
+        </div>
+
+        <div class="team-member">
+          <div class="team-member-avatar">👤</div>
+          <h4>成员B</h4>
+          <p>负责景点模块和景点详情页</p>
+        </div>
+
+        <div class="team-member">
+          <div class="team-member-avatar">👤</div>
+          <h4>成员C</h4>
+          <p>负责美食模块和餐饮推荐</p>
+        </div>
+
+        <div class="team-member">
+          <div class="team-member-avatar">👤</div>
+          <h4>成员D</h4>
+          <p>负责交通、地图和行程规划模块</p>
+        </div>
+
+        <div class="team-member">
+          <div class="team-member-avatar">👤</div>
+          <h4>成员E</h4>
+          <p>负责Jekyll配置、布局组件和样式统一</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>项目亮点</h2>
+      <p>
+        本项目的亮点包括：
+      </p>
+      <ul>
+        <li><strong>本地化内容：</strong>提供针对新加坡本地的实用旅游信息</li>
+        <li><strong>沉浸式体验：</strong>通过丰富的图片和详细描述，让用户仿佛身临其境</li>
+        <li><strong>实用性强：</strong>不仅提供景点信息，还包括交通、美食、行程规划等实用内容</li>
+        <li><strong>响应式设计：</strong>支持手机、平板、电脑等多种设备浏览</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2>联系我们</h2>
+      <p>
+        如果您对本项目有任何建议或问题，欢迎通过以下方式联系我们：
+      </p>
+      <ul>
+        <li>GitHub仓库：https://github.com/cannot0/singapore-travel-guide</li>
+        <li>项目Issues：欢迎在GitHub上提交Issue</li>
+      </ul>
+    </section>
+  </div>
+</div>

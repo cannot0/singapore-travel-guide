@@ -1,0 +1,157 @@
+# Singapore Foods Data
+
+- name: 海南鸡饭
+  category: 面条
+  rating: 5
+  description: 新加坡的国菜，嫩滑的鸡肉配上香喷喷的米饭，是必尝的美食。
+  location: 文东记
+  image: /assets/images/food/hainanese-chicken-rice.jpg
+  price: $5-10
+  featured: true
+  tips:
+    - 建议选择白斩鸡
+    - 可以要求多加酱料
+    - 午餐时间人较多
+
+- name: 叻沙
+  category: 汤面
+  rating: 4
+  description: 浓郁的椰奶咖喱汤底，配上米粉和各种配料，味道独特。
+  location: 328加东叻沙
+  image: /assets/images/food/laksa.jpg
+  price: $8-12
+  featured: true
+  tips:
+    - 可以选择不同辣度
+    - 建议加豆腐泡
+    - 搭配油条更美味
+
+- name: 咖喱鱼头
+  category: 咖喱
+  rating: 4
+  description: 印度风味的咖喱料理，鱼头鲜嫩，汤汁浓郁，非常适合配饭。
+  location: 香蕉叶芭沙
+  image: /assets/images/food/curry-fish-head.jpg
+  price: $6-10
+  featured: true
+  tips:
+    - 可以选择不同辣度
+    - 建议配米饭
+    - 傍晚时分人较少
+
+- name: 辣椒螃蟹
+  category: 海鲜
+  rating: 5
+  description: 新加坡的标志性海鲜菜肴，酸甜辣味的酱汁配上新鲜螃蟹。
+  location: 珍宝海鲜
+  image: /assets/images/food/chili-crab.jpg
+  price: $15-25
+  featured: true
+  tips:
+    - 建议提前预订
+    - 可以要求调整辣度
+    - 搭配馒头蘸酱更美味
+
+- name: 沙爹
+  category: 烧烤
+  rating: 4
+  description: 马来风味的烤肉串，配上特制的花生酱，香气扑鼻。
+  location: 老巴刹
+  image: /assets/images/food/satay.jpg
+  price: $3-5
+  featured: true
+  tips:
+    - 建议点混合肉串
+    - 花生酱是灵魂
+    - 晚上人较多
+
+- name: 咖喱鸡
+  category: 咖喱
+  rating: 4
+  description: 印度风味的咖喱鸡，香料丰富，肉质鲜嫩，是椰浆饭的经典搭配。
+  location: 土司工坊
+  image: /assets/images/food/curry-chicken.jpg
+  price: $4-7
+  featured: false
+  tips:
+    - 可以选择不同辣度
+    - 搭配椰浆饭更美味
+    - 早餐时段供应
+
+- name: 摩摩喳喳
+  category: 甜品
+  rating: 4
+  description: 东南亚特色甜品，用各种豆类、薯类和椰奶制成，清凉解暑。
+  location: 詹爷爷
+  image: /assets/images/food/muah-chee.jpg
+  price: $3-5
+  featured: false
+  tips:
+    - 可以选择冷热
+    - 建议少糖
+    - 饭后甜点首选
+
+- name: 拉茶
+  category: 饮品
+  rating: 4
+  description: 马来西亚和新加坡的传统饮品，用红茶和炼乳制成，口感顺滑。
+  location: 各小贩中心
+  image: /assets/images/food/teh-tarik.jpg
+  price: $2-4
+  featured: false
+  tips:
+    - 可以选择甜度
+    - 热饮风味更佳
+    - 搭配烤面包更美味
+
+- name: 煎蕊
+  category: 甜品
+  rating: 4
+  description: 绿色的米粉配上椰奶和棕榈糖，是新加坡的经典甜品。
+  location: 摩摩喳喳
+  image: /assets/images/food/chendol.jpg
+  price: $2-4
+  featured: false
+  tips:
+    - 建议加红豆
+    - 冰凉解暑
+    - 路边摊更正宗
+
+- name: 肉骨茶
+  category: 汤品
+  rating: 5
+  description: 新加坡的特色汤品，用猪骨和中药材熬制，味道鲜美。
+  location: 松发肉骨茶
+  image: /assets/images/food/bak-kut-teh.jpg
+  price: $8-12
+  featured: false
+  tips:
+    - 可以选择不同部位
+    - 搭配油条更美味
+    - 早餐时段供应
+
+- name: 炒粿条
+  category: 面条
+  rating: 4
+  description: 新加坡的经典炒面，用粿条、豆芽、鸡蛋等炒制，香气扑鼻。
+  location: 老巴刹
+  image: /assets/images/food/char-kway-teow.jpg
+  price: $4-6
+  featured: false
+  tips:
+    - 可以选择加虾或不加
+    - 锅气是关键
+    - 午餐时段人较多
+
+- name: 咖椰吐司
+  category: 早餐
+  rating: 4
+  description: 新加坡的经典早餐，用咖椰酱和黄油涂在吐司上，配上半熟蛋。
+  location: 亚坤
+  image: /assets/images/food/kaya-toast.jpg
+  price: $3-5
+  featured: false
+  tips:
+    - 可以选择脆或软吐司
+    - 半熟蛋是经典搭配
+    - 适合早餐时段
