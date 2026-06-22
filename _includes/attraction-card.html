@@ -31,6 +31,8 @@
       </div>
     {% endif %}
 
+    {% unless include.hide_link %}
     <a href="{{ include.url | relative_url }}" class="card-link">查看详情 →</a>
+    {% endunless %}
   </div>
 </div>

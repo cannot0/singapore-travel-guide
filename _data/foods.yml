@@ -7,6 +7,7 @@
   description: 嫩滑白斩鸡配鸡油香米饭，搭配辣椒酱、姜蓉和黑酱油，是新加坡最具代表性的国民美食。
   location: 天天海南鸡饭 / 文东记
   image: /assets/images/food/hainanese-chicken-rice.jpg
+  card_image: /assets/images/food/海南鸡饭.jpg
   price: $5-10
   emoji: 🍗
   featured: true
@@ -22,6 +23,7 @@
   description: 椰奶咖喱汤底浓郁辛香，配短米粉、鱼饼、豆芽和鲜虾，是娘惹风味的经典代表。
   location: 328加东叻沙
   image: /assets/images/food/laksa.jpg
+  card_image: /assets/images/food/叻沙.jpg
   price: $6-12
   emoji: 🍜
   featured: true
@@ -37,6 +39,7 @@
   description: 酸甜微辣的番茄辣椒酱包裹鲜甜螃蟹，酱汁浓厚，配炸馒头是新加坡海鲜餐厅的招牌。
   location: 珍宝海鲜 / 无招牌海鲜
   image: /assets/images/food/chili-crab.jpg
+  card_image: /assets/images/food/辣椒螃蟹.jpg
   price: $45-90
   emoji: 🦀
   featured: true
@@ -52,6 +55,7 @@
   description: 胡椒蒜香汤底搭配猪肋排，汤清味浓，常配油条、卤味和米饭，是早午餐都适合的热汤料理。
   location: 松发肉骨茶 / 发起人肉骨茶
   image: /assets/images/food/bak-kut-teh.jpg
+  card_image: /assets/images/food/肉骨茶.jpg
   price: $8-15
   emoji: 🍲
   featured: true
@@ -67,6 +71,7 @@
   description: 椰奶米饭配参巴辣酱、炸鸡、花生、江鱼仔和黄瓜，香辣浓郁，是马来风味早餐和正餐的常见选择。
   location: The Coconut Club / 小贩中心
   image: /assets/images/food/nasi-lemak.jpg
+  card_image: /assets/images/food/椰浆饭.jpg
   price: $4-12
   emoji: 🍛
   featured: true
@@ -82,6 +87,7 @@
   description: 南印度香料与本地海鲜结合，鱼头炖入酸香咖喱汁，适合多人分享，配米饭或印度薄饼都很合适。
   location: The Banana Leaf Apolo
   image: /assets/images/food/curry-fish-head.jpg
+  card_image: /assets/images/food/咖喱鱼头.jpg
   price: $24-40
   emoji: 🍛
   featured: true
@@ -112,6 +118,7 @@
   description: 腌制肉串炭火烤香，搭配花生沙爹酱、黄瓜和洋葱，夜晚在露天熟食街吃最有氛围。
   location: 老巴刹沙爹街
   image: /assets/images/food/satay.jpg
+  card_image: /assets/images/food/沙爹.jpg
   price: $0.80-1.20/串
   emoji: 🍢
   featured: false

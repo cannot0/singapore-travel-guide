@@ -3,25 +3,26 @@ layout: default
 title: 首页
 ---
 
-<div class="hero">
-  <h1>🇸🇬 欢迎来到新加坡</h1>
+<!-- ===== Hero ===== -->
+<div class="hero" style="background: linear-gradient(135deg, rgba(37,99,235,0.72) 0%, rgba(16,185,129,0.72) 100%), url({{ '/assets/images/新加坡.jpg' | relative_url }}) center/cover no-repeat;">
+  <h1>欢迎来到新加坡</h1>
   <p>
     探索花园城市的精彩景点、品尝地道美食、了解便捷交通，规划您的完美旅程。
     新加坡，一个融合东西方文化的现代化都市，等待您的发现。
   </p>
   <div class="hero-buttons">
-    <a href="{{ '/attractions/' | relative_url }}" class="btn btn-primary">探索景点</a>
+    <a href="{{ '/attractions/' | relative_url }}" class="btn btn-secondary">探索景点</a>
     <a href="{{ '/itinerary/' | relative_url }}" class="btn btn-secondary">规划行程</a>
   </div>
 </div>
 
+<!-- ===== 为什么选择新加坡 ===== -->
 <section class="section">
   <div class="container">
     <div class="section-header">
       <h2>为什么选择新加坡？</h2>
       <p>一个让你流连忘返的花园城市</p>
     </div>
-
     <div class="cards-grid">
       <div class="attraction-card">
         <div class="card-content">
@@ -33,7 +34,6 @@ title: 首页
           </p>
         </div>
       </div>
-
       <div class="attraction-card">
         <div class="card-content">
           <div class="transport-icon">🍜</div>
@@ -44,7 +44,6 @@ title: 首页
           </p>
         </div>
       </div>
-
       <div class="attraction-card">
         <div class="card-content">
           <div class="transport-icon">🚇</div>
@@ -59,78 +58,64 @@ title: 首页
   </div>
 </section>
 
+<!-- ===== 热门景点推荐（数据驱动） ===== -->
 <section class="section" style="background-color: var(--card-bg);">
   <div class="container">
     <div class="section-header">
-      <h2>热门推荐</h2>
+      <h2>热门景点推荐</h2>
       <p>不容错过的新加坡体验</p>
     </div>
-
     <div class="cards-grid">
-      <div class="attraction-card">
-        <div class="card-image">
-          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #10b981 0%, #059669 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
-            🌸
-          </div>
-        </div>
-        <div class="card-content">
-          <span class="card-category">必游景点</span>
-          <h3 class="card-title">
-            <a href="{{ '/attractions/gardens-by-the-bay/' | relative_url }}">滨海湾花园</a>
-          </h3>
-          <p class="card-description">
-            新加坡的标志性景点，拥有壮观的超级树和室内花园。
-          </p>
-          <a href="{{ '/attractions/gardens-by-the-bay/' | relative_url }}" class="card-link">查看详情 →</a>
-        </div>
-      </div>
-
-      <div class="attraction-card">
-        <div class="card-image">
-          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
-            🎡
-          </div>
-        </div>
-        <div class="card-content">
-          <span class="card-category">热门景点</span>
-          <h3 class="card-title">
-            <a href="{{ '/attractions/sentosa/' | relative_url }}">圣淘沙岛</a>
-          </h3>
-          <p class="card-description">
-            集娱乐、购物、海滩于一体的度假胜地。
-          </p>
-          <a href="{{ '/attractions/sentosa/' | relative_url }}" class="card-link">查看详情 →</a>
-        </div>
-      </div>
-
-      <div class="attraction-card">
-        <div class="card-image">
-          <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
-            🦁
-          </div>
-        </div>
-        <div class="card-content">
-          <span class="card-category">经典景点</span>
-          <h3 class="card-title">
-            <a href="{{ '/attractions/merlion-park/' | relative_url }}">鱼尾狮公园</a>
-          </h3>
-          <p class="card-description">
-            新加坡的象征，必打卡的地标性景点。
-          </p>
-          <a href="{{ '/attractions/merlion-park/' | relative_url }}" class="card-link">查看详情 →</a>
-        </div>
-      </div>
+      {% for attraction in site.data.attractions %}
+        {% if attraction.featured %}
+          {% include attraction-card.html
+            hide_link=true
+            title=attraction.name
+            image=attraction.card_image
+            category=attraction.category
+            description=attraction.description
+            location=attraction.location
+            url=attraction.url
+          %}
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>
 
+<!-- ===== 必尝美食（数据驱动） ===== -->
 <section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>必尝美食</h2>
+      <p>舌尖上的新加坡之旅</p>
+    </div>
+    <div class="cards-grid">
+      {% for food in site.data.foods %}
+        {% if food.featured %}
+          {% include food-card.html
+            title=food.name
+            image=food.card_image
+            description=food.description
+            location=food.location
+            price=food.price
+          %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div style="text-align: center; margin-top: var(--spacing-xl);">
+      <a href="{{ '/food/' | relative_url }}" class="btn btn-secondary">查看更多美食 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 快速开始 ===== -->
+<section class="section" style="background-color: var(--card-bg);">
   <div class="container">
     <div class="section-header">
       <h2>快速开始</h2>
       <p>轻松规划您的新加坡之旅</p>
     </div>
-
     <div class="cards-grid">
       <div class="attraction-card">
         <div class="card-content text-center">
@@ -142,7 +127,6 @@ title: 首页
           <a href="{{ '/attractions/' | relative_url }}" class="btn btn-primary" style="display: inline-block;">开始探索</a>
         </div>
       </div>
-
       <div class="attraction-card">
         <div class="card-content text-center">
           <div class="transport-icon">2</div>
@@ -153,7 +137,6 @@ title: 首页
           <a href="{{ '/food/' | relative_url }}" class="btn btn-primary" style="display: inline-block;">发现美食</a>
         </div>
       </div>
-
       <div class="attraction-card">
         <div class="card-content text-center">
           <div class="transport-icon">3</div>
@@ -162,6 +145,45 @@ title: 首页
             根据您的时间和兴趣，制定完美的旅行计划。
           </p>
           <a href="{{ '/itinerary/' | relative_url }}" class="btn btn-primary" style="display: inline-block;">规划行程</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 旅行贴士 ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>旅行小贴士</h2>
+      <p>让您的新加坡之旅更加顺利</p>
+    </div>
+    <div class="cards-grid">
+      <div class="attraction-card">
+        <div class="card-content">
+          <div class="transport-icon">🌤️</div>
+          <h3 class="card-title">最佳时间</h3>
+          <p class="card-description">
+            全年温暖，2-4月和7-9月气候最舒适。记得携带防晒用品和雨具。
+          </p>
+        </div>
+      </div>
+      <div class="attraction-card">
+        <div class="card-content">
+          <div class="transport-icon">💳</div>
+          <h3 class="card-title">支付方式</h3>
+          <p class="card-description">
+            新加坡广泛使用无现金支付，GrabPay、PayNow等均可用。
+          </p>
+        </div>
+      </div>
+      <div class="attraction-card">
+        <div class="card-content">
+          <div class="transport-icon">🗣️</div>
+          <h3 class="card-title">语言沟通</h3>
+          <p class="card-description">
+            官方语言为英语、华语、马来语和泰米尔语，中文沟通基本无障碍。
+          </p>
         </div>
       </div>
     </div>

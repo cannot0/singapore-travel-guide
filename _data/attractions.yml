@@ -1,11 +1,12 @@
 # Singapore Attractions Data
 
 - name: 滨海湾花园
-  category: 花园
+  category: 城市绿洲
   rating: 5
   description: 新加坡的标志性景点，拥有壮观的超级树和室内花园。占地101公顷，是新加坡最热门的旅游景点之一。
   location: 滨海湾地区
   image: /assets/images/attractions/gardens-by-the-bay.jpg
+  card_image: /assets/images/attractions/滨海湾花园.jpg
   url: /attractions/gardens-by-the-bay/
   featured: true
   hours: 每天 05:00-02:00
@@ -21,6 +22,7 @@
   description: 集娱乐、购物、海滩于一体的度假胜地。拥有环球影城、S.E.A.海洋馆等众多景点。
   location: 圣淘沙岛
   image: /assets/images/attractions/sentosa.jpg
+  card_image: /assets/images/attractions/圣淘沙岛.jpg
   url: /attractions/sentosa/
   featured: true
   hours: 全天开放（各景点营业时间不同）
@@ -31,11 +33,12 @@
     - 海滩区域免费进入
 
 - name: 鱼尾狮公园
-  category: 地标
+  category: 城市象征
   rating: 5
   description: 新加坡的象征，必打卡的地标性景点。鱼尾狮雕像是新加坡的标志，位于滨海湾。
   location: 滨海湾
   image: /assets/images/attractions/merlion-park.jpg
+  card_image: /assets/images/attractions/鱼尾狮公园.jpg
   url: /attractions/merlion-park/
   featured: true
   hours: 全天开放
