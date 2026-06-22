@@ -1,9 +1,19 @@
 <div class="food-card">
-  {% if include.image %}
-    <div class="card-image">
-      <img src="{{ include.image | relative_url }}" alt="{{ include.title }}">
+  <div class="card-image">
+    {% if include.image %}
+      <img
+        src="{{ include.image | relative_url }}"
+        alt="{{ include.title }}"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+      >
+    {% endif %}
+    <div
+      aria-hidden="true"
+      style="width: 100%; height: 100%; min-height: 200px; {% if include.image %}display: none;{% else %}display: flex;{% endif %} align-items: center; justify-content: center; background: linear-gradient(135deg, #f97316 0%, #10b981 100%); font-size: 4rem;"
+    >
+      {{ include.emoji | default: "🍽️" }}
     </div>
-  {% endif %}
+  </div>
 
   <div class="card-content">
     <h3 class="card-title">{{ include.title }}</h3>
@@ -16,6 +26,16 @@
       <span class="card-price">{{ include.price }}</span>
     {% endif %}
 
+    {% if include.rating %}
+      {% assign rating_value = include.rating | plus: 0 %}
+      <div class="card-rating">
+        <span class="rating-stars" aria-label="{{ rating_value }}星">
+          {% for i in (1..5) %}{% if i <= rating_value %}★{% else %}☆{% endif %}{% endfor %}
+        </span>
+        <span class="rating-text">{{ rating_value }}/5</span>
+      </div>
+    {% endif %}
+
     {% if include.description %}
       <p class="card-description">{{ include.description | truncate: 120 }}</p>
     {% endif %}
@@ -24,13 +44,6 @@
       <div class="card-location">
         <span class="icon">📍</span>
         <span>{{ include.location }}</span>
-      </div>
-    {% endif %}
-
-    {% if include.rating %}
-      <div class="card-rating">
-        <span class="rating-stars">{{ '★' * include.rating }}{{ '☆' * (5 - include.rating) }}</span>
-        <span class="rating-text">{{ include.rating }}/5</span>
       </div>
     {% endif %}
   </div>
