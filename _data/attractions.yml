@@ -1,12 +1,11 @@
 # Singapore Attractions Data
-
+# 原有基础景点 + 需求新增8个完整景点，分类匹配页面四大板块
 - name: 滨海湾花园
-  category: 城市绿洲
+  category: 必游景点
   rating: 5
   description: 新加坡的标志性景点，拥有壮观的超级树和室内花园。占地101公顷，是新加坡最热门的旅游景点之一。
   location: 滨海湾地区
   image: /assets/images/attractions/gardens-by-the-bay.jpg
-  card_image: /assets/images/attractions/滨海湾花园.jpg
   url: /attractions/gardens-by-the-bay/
   featured: true
   hours: 每天 05:00-02:00
@@ -17,12 +16,11 @@
     - 温室建议提前在线购票
 
 - name: 圣淘沙岛
-  category: 度假胜地
+  category: 必游景点
   rating: 4
   description: 集娱乐、购物、海滩于一体的度假胜地。拥有环球影城、S.E.A.海洋馆等众多景点。
   location: 圣淘沙岛
   image: /assets/images/attractions/sentosa.jpg
-  card_image: /assets/images/attractions/圣淘沙岛.jpg
   url: /attractions/sentosa/
   featured: true
   hours: 全天开放（各景点营业时间不同）
@@ -33,12 +31,11 @@
     - 海滩区域免费进入
 
 - name: 鱼尾狮公园
-  category: 城市象征
+  category: 必游景点
   rating: 5
   description: 新加坡的象征，必打卡的地标性景点。鱼尾狮雕像是新加坡的标志，位于滨海湾。
   location: 滨海湾
   image: /assets/images/attractions/merlion-park.jpg
-  card_image: /assets/images/attractions/鱼尾狮公园.jpg
   url: /attractions/merlion-park/
   featured: true
   hours: 全天开放
@@ -48,8 +45,23 @@
     - 可以拍摄鱼尾狮喷水的经典照片
     - 附近有多个拍照点
 
+# 新增：滨海湾金沙空中花园
+- name: 滨海湾金沙空中花园
+  category: 必游景点
+  rating: 5
+  description: 新加坡标志性高空观景平台，360°俯瞰滨海湾全城风光，无边泳池仅限酒店住客使用。
+  location: 滨海湾金沙酒店57层
+  image: /assets/images/attractions/mbs.jpg
+  url: /attractions/mbs/
+  featured: true
+  hours: 09:30 - 22:00
+  price: 成人26新币，儿童19新币
+  tips:
+    - 傍晚入园可一次性观赏日间景色与城市夜景
+    - 周末游客密集，推荐工作日前往
+
 - name: 小印度
-  category: 文化
+  category: 文化体验
   rating: 4
   description: 感受印度文化的魅力，这里有色彩斑斓的建筑、香料市场和传统服饰。
   location: 小印度区
@@ -64,7 +76,7 @@
     - 建议下午前往，光线适合拍照
 
 - name: 牛车水
-  category: 文化
+  category: 文化体验
   rating: 4
   description: 新加坡的唐人街，保留了浓厚的中华文化传统，有古老的寺庙和传统店铺。
   location: 牛车水区
@@ -78,8 +90,68 @@
     - 可以购买手信和纪念品
     - 有很多地道的中式美食
 
+- name: 甘榜格南
+  category: 文化体验
+  rating: 4
+  description: 马来文化区，这里有美丽的苏丹回教堂和特色商店。
+  location: 甘榜格南区
+  image: /assets/images/attractions/kampong-glam.jpg
+  url: /attractions/kampong-glam/
+  featured: false
+  hours: 全天开放（店铺营业时间不同）
+  price: 免费
+  tips:
+    - 苏丹回教堂是必看景点
+    - 哈芝巷有很多特色小店
+    - 有很多马来美食
+
+# 新增：国家美术馆
+- name: 国家美术馆
+  category: 文化体验
+  rating: 4
+  description: 由旧法院改建，收藏大量东南亚本土艺术画作与雕塑，感受南洋美术文化。
+  location: 市中心政府大厦
+  image: /assets/images/attractions/art-gallery.jpg
+  url: /attractions/art-gallery/
+  featured: false
+  hours: 10:00 - 19:00
+  price: 成人20新币
+  tips:
+    - 周五傍晚入场票价优惠
+    - 馆内禁止闪光灯拍照
+
+# 新增：福康宁公园
+- name: 福康宁公园
+  category: 文化体验
+  rating: 4
+  description: 复古树洞网红打卡点，殖民历史遗迹，城市小型休闲公园，拍照出片。
+  location: 福康宁山区域
+  image: /assets/images/attractions/fort-canning.jpg
+  url: /attractions/fort-canning/
+  featured: false
+  hours: 全天开放
+  price: 免费
+  tips:
+    - 树洞打卡点工作日人更少
+    - 园内有小型历史展览馆
+
+# 新增：哈芝巷
+- name: 哈芝巷
+  category: 文化体验
+  rating: 4
+  description: 彩色涂鸦文艺小巷，独立设计师小店、网红咖啡馆，年轻群体打卡首选。
+  location: 甘榜格南旁哈芝巷
+  image: /assets/images/attractions/haji-lane.jpg
+  url: /attractions/haji-lane/
+  featured: false
+  hours: 11:00 - 19:00
+  price: 免费
+  tips:
+    - 白天光线充足适合拍涂鸦墙
+    - 小巷店铺多为原创手作
+
 - name: 新加坡植物园
-  category: 自然
+  category: 自然风光
   rating: 5
   description: 联合国教科文组织世界遗产，拥有超过1万种植物，是城市中的绿洲。
   location: 乌节路附近
@@ -94,7 +166,7 @@
     - 建议预留2-3小时
 
 - name: 新加坡动物园
-  category: 自然
+  category: 自然风光
   rating: 4
   description: 世界顶级的开放式动物园，拥有超过300种动物，体验与自然的亲密接触。
   location: 万里区
@@ -108,23 +180,8 @@
     - 可以预订早餐与猩猩共餐
     - 夜间动物园也值得一游
 
-- name: 甘榜格南
-  category: 文化
-  rating: 4
-  description: 马来文化区，这里有美丽的苏丹回教堂和特色商店。
-  location: 甘榜格南区
-  image: /assets/images/attractions/kampong-glam.jpg
-  url: /attractions/kampong-glam/
-  featured: false
-  hours: 全天开放（店铺营业时间不同）
-  price: 免费
-  tips:
-    - 苏丹回教堂是必看景点
-    - 哈芝巷有很多特色小店
-    - 有很多马来美食
-
 - name: 裕廊飞禽公园
-  category: 自然
+  category: 自然风光
   rating: 4
   description: 亚洲最大的飞禽公园，拥有超过5000只鸟类，是鸟类爱好者的天堂。
   location: 裕廊区
@@ -138,13 +195,43 @@
     - 有多个表演时间表
     - 可以预订鸟类早餐体验
 
-- name: 克拉码头
-  category: 娱乐
+# 新增：河川生态园
+- name: 河川生态园
+  category: 自然风光
   rating: 4
-  description: 新加坡著名的夜生活区，有众多酒吧和餐厅，是晚上休闲的好去处。
+  description: 东南亚淡水动物园区，亚马逊主题游船，近距离观赏各类淡水野生动物。
+  location: 北部万里自然园区
+  image: /assets/images/attractions/river-wonders.jpg
+  url: /attractions/river-wonders/
+  featured: false
+  hours: 10:00 - 19:00
+  price: 成人38新币
+  tips:
+    - 亚马逊游船项目必体验
+    - 园区内有大熊猫展区
+
+# 新增：夜间动物园
+- name: 夜间动物园
+  category: 自然风光
+  rating: 4
+  description: 全球首座夜间开放动物园，夜游模式近距离观察各类夜行野生动物。
+  location: 北部万礼自然保护区
+  image: /assets/images/attractions/night-safari.jpg
+  url: /attractions/night-safari/
+  featured: false
+  hours: 18:30 - 24:00
+  price: 成人48新币
+  tips:
+    - 禁止使用闪光灯惊扰动物
+    - 推荐乘坐电车游览主线
+
+- name: 克拉码头
+  category: 逛街休闲
+  rating: 4
+  description: 新加坡河沿岸休闲街区，酒吧、餐厅云集，夜晚灯光氛围感强，适合游船散步。
   location: 河畔区
   image: /assets/images/attractions/clark-quay.jpg
-  url: /attractions/clark-quay/
+  url: /attractions/clarke-quay/
   featured: false
   hours: 全天开放（店铺营业时间不同）
   price: 免费
@@ -152,3 +239,18 @@
     - 晚上氛围更好
     - 有很多河畔餐厅
     - 可以乘坐新加坡河游船
+
+# 新增：乌节路
+- name: 乌节路
+  category: 逛街休闲
+  rating: 5
+  description: 新加坡顶级购物大道，云集奢侈品商场、潮牌门店，全天适合逛街休闲。
+  location: 乌节路商圈
+  image: /assets/images/attractions/orchard-road.jpg
+  url: /attractions/orchard-road/
+  featured: true
+  hours: 10:00 - 22:00
+  price: 免费逛街
+  tips:
+    - 年终折扣季购物性价比高
+    - 沿路餐饮选择丰富
