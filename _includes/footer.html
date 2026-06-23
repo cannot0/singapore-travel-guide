@@ -1,0 +1,33 @@
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>关于本站</h4>
+        <p>新加坡旅游指南，为您提供全面的新加坡旅游攻略。</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>快速链接</h4>
+        <ul class="footer-links">
+          <li><a href="{{ '/' | relative_url }}">首页</a></li>
+          <li><a href="{{ '/attractions/' | relative_url }}">景点</a></li>
+          <li><a href="{{ '/food/' | relative_url }}">美食</a></li>
+          <li><a href="{{ '/transport/' | relative_url }}">交通</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>更多</h4>
+        <ul class="footer-links">
+          <li><a href="{{ '/map/' | relative_url }}">地图</a></li>
+          <li><a href="{{ '/itinerary/' | relative_url }}">行程规划</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">关于我们</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. 保留所有权利。</p>
+    </div>
+  </div>
+</footer>

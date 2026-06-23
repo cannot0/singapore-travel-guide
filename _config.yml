@@ -1,0 +1,28 @@
+# Site settings
+title: "新加坡旅游指南"
+description: "探索新加坡的精彩景点、美食、交通和旅游攻略"
+url: "https://cannot0.github.io"
+baseurl: "/singapore-travel-guide"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from build
+exclude:
+  - README.md
+  - LICENSE
+
+# Collections
+collections:
+  attractions:
+    output: true
+    permalink: /attractions/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "attractions"
+    values:
+      layout: "attraction"

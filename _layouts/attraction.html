@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<div class="attraction-detail">
+  <header class="attraction-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.category %}
+      <span class="attraction-category">{{ page.category }}</span>
+    {% endif %}
+  </header>
+
+  {% if page.image %}
+    <div class="attraction-image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
+  {% endif %}
+
+  <div class="attraction-info">
+    {% if page.rating %}
+      <div class="attraction-rating">
+        <span class="rating-stars">{{ '★' * page.rating }}{{ '☆' * (5 - page.rating) }}</span>
+        <span class="rating-text">{{ page.rating }}/5</span>
+      </div>
+    {% endif %}
+
+    {% if page.location %}
+      <div class="attraction-location">
+        <span class="icon">📍</span>
+        <span>{{ page.location }}</span>
+      </div>
+    {% endif %}
+
+    {% if page.hours %}
+      <div class="attraction-hours">
+        <span class="icon">🕐</span>
+        <span>{{ page.hours }}</span>
+      </div>
+    {% endif %}
+
+    {% if page.price %}
+      <div class="attraction-price">
+        <span class="icon">💰</span>
+        <span>{{ page.price }}</span>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="attraction-description">
+    {{ content }}
+  </div>
+
+  {% if page.tips %}
+    <div class="attraction-tips">
+      <h3>游览提示</h3>
+      <ul>
+        {% for tip in page.tips %}
+          <li>{{ tip }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  <nav class="attraction-nav">
+    <a href="{{ '/attractions/' | relative_url }}" class="back-link">← 返回景点列表</a>
+  </nav>
+</div>

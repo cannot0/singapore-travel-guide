@@ -1,0 +1,278 @@
+# Singapore Foods Data
+
+- name: 海南鸡饭
+  section: 必尝美食
+  category: 主食
+  rating: 5
+  description: 嫩滑白斩鸡配鸡油香米饭，搭配辣椒酱、姜蓉和黑酱油，是新加坡最具代表性的国民美食。
+  location: 天天海南鸡饭 / 文东记
+  image: /assets/images/food/hainanese-chicken-rice.jpg
+  card_image: /assets/images/food/海南鸡饭.jpg
+  price: $5-10
+  emoji: 🍗
+  featured: true
+  tips:
+    - 午餐时段排队较长，建议错峰前往
+    - 记得搭配辣椒酱和姜蓉
+    - 熟食中心版本性价比很高
+
+- name: 加东叻沙
+  section: 必尝美食
+  category: 汤粉
+  rating: 5
+  description: 椰奶咖喱汤底浓郁辛香，配短米粉、鱼饼、豆芽和鲜虾，是娘惹风味的经典代表。
+  location: 328加东叻沙
+  image: /assets/images/food/laksa.jpg
+  card_image: /assets/images/food/叻沙.jpg
+  price: $6-12
+  emoji: 🍜
+  featured: true
+  tips:
+    - 加东叻沙通常只用汤匙吃，米粉较短
+    - 椰奶汤底偏浓，适合趁热吃
+    - 可按口味少放叻沙叶或辣酱
+
+- name: 辣椒螃蟹
+  section: 必尝美食
+  category: 海鲜
+  rating: 5
+  description: 酸甜微辣的番茄辣椒酱包裹鲜甜螃蟹，酱汁浓厚，配炸馒头是新加坡海鲜餐厅的招牌。
+  location: 珍宝海鲜 / 无招牌海鲜
+  image: /assets/images/food/chili-crab.jpg
+  card_image: /assets/images/food/辣椒螃蟹.jpg
+  price: $45-90
+  emoji: 🦀
+  featured: true
+  tips:
+    - 热门餐厅建议提前订位
+    - 价格通常按螃蟹重量计算
+    - 炸馒头蘸酱是经典吃法
+
+- name: 肉骨茶
+  section: 必尝美食
+  category: 汤品
+  rating: 5
+  description: 胡椒蒜香汤底搭配猪肋排，汤清味浓，常配油条、卤味和米饭，是早午餐都适合的热汤料理。
+  location: 松发肉骨茶 / 发起人肉骨茶
+  image: /assets/images/food/bak-kut-teh.jpg
+  card_image: /assets/images/food/肉骨茶.jpg
+  price: $8-15
+  emoji: 🍲
+  featured: true
+  tips:
+    - 可免费续汤的店很多
+    - 喜欢重口味可以点卤大肠或豆腐皮
+    - 胡椒味明显，怕辣可先小口试汤
+
+- name: 椰浆饭
+  section: 必尝美食
+  category: 米饭
+  rating: 4
+  description: 椰奶米饭配参巴辣酱、炸鸡、花生、江鱼仔和黄瓜，香辣浓郁，是马来风味早餐和正餐的常见选择。
+  location: The Coconut Club / 小贩中心
+  image: /assets/images/food/nasi-lemak.jpg
+  card_image: /assets/images/food/椰浆饭.jpg
+  price: $4-12
+  emoji: 🍛
+  featured: true
+  tips:
+    - 参巴辣酱是灵魂，可先少量尝试
+    - 炸鸡腿版本更适合正餐
+    - 早上购买通常选择更多
+
+- name: 咖喱鱼头
+  section: 必尝美食
+  category: 咖喱
+  rating: 4
+  description: 南印度香料与本地海鲜结合，鱼头炖入酸香咖喱汁，适合多人分享，配米饭或印度薄饼都很合适。
+  location: The Banana Leaf Apolo
+  image: /assets/images/food/curry-fish-head.jpg
+  card_image: /assets/images/food/咖喱鱼头.jpg
+  price: $24-40
+  emoji: 🍛
+  featured: true
+  tips:
+    - 适合两到四人分享
+    - 可询问辣度和鱼头大小
+    - 咖喱汁配米饭很下饭
+
+- name: 炒粿条
+  section: 特色小吃
+  category: 炒粉
+  rating: 4
+  description: 扁米粉与黄面用黑酱油、鸡蛋、豆芽、腊肠和海鲜大火快炒，锅气足、甜咸交织。
+  location: 老巴刹 / Maxwell Food Centre
+  image: /assets/images/food/char-kway-teow.jpg
+  price: $4-7
+  emoji: 🍝
+  featured: false
+  tips:
+    - 可选择加辣或不加辣
+    - 现炒摊位等待时间较长
+    - 味道偏重，适合搭配清爽饮品
+
+- name: 沙爹
+  section: 特色小吃
+  category: 烧烤
+  rating: 4
+  description: 腌制肉串炭火烤香，搭配花生沙爹酱、黄瓜和洋葱，夜晚在露天熟食街吃最有氛围。
+  location: 老巴刹沙爹街
+  image: /assets/images/food/satay.jpg
+  card_image: /assets/images/food/沙爹.jpg
+  price: $0.80-1.20/串
+  emoji: 🍢
+  featured: false
+  tips:
+    - 鸡肉、牛肉、羊肉可混合点
+    - 傍晚后选择更多
+    - 花生酱可请店家多给一份
+
+- name: 黑胡椒螃蟹
+  section: 特色小吃
+  category: 海鲜
+  rating: 5
+  description: 相比辣椒螃蟹更突出黑胡椒辛香，酱汁干香浓烈，适合喜欢重口味海鲜的游客。
+  location: Long Beach Seafood
+  image: /assets/images/food/black-pepper-crab.jpg
+  price: $45-90
+  emoji: 🦀
+  featured: false
+  tips:
+    - 黑胡椒味较冲，建议配清爽蔬菜
+    - 与辣椒螃蟹二选一即可
+    - 点餐前确认时价
+
+- name: 印度煎饼
+  section: 特色小吃
+  category: 面饼
+  rating: 4
+  description: 外层酥脆、内部柔软的印度飞饼，可搭配咖喱汁，也可选择鸡蛋、芝士、洋葱等馅料。
+  location: 小印度 Tekka Centre
+  image: /assets/images/food/roti-prata.jpg
+  price: $2-6
+  emoji: 🫓
+  featured: false
+  tips:
+    - 原味煎饼配咖喱最经典
+    - 适合作为早餐或宵夜
+    - 可搭配拉茶
+
+- name: 萝卜糕
+  section: 特色小吃
+  category: 煎炒
+  rating: 4
+  description: 米浆萝卜糕切块后与鸡蛋、蒜末和菜脯同炒，白版清香，黑版加入甜黑酱油更浓郁。
+  location: 牛车水熟食中心
+  image: /assets/images/food/carrot-cake.jpg
+  price: $3-6
+  emoji: 🍳
+  featured: false
+  tips:
+    - 可选择黑版或白版
+    - 刚出锅口感最好
+    - 菜脯带咸香，适合配茶
+
+- name: 云吞面
+  section: 特色小吃
+  category: 面食
+  rating: 4
+  description: 细蛋面拌酱后配叉烧和云吞，面条弹牙，干捞版本常带微甜酱香，是常见的平价午餐。
+  location: Old Airport Road Food Centre
+  image: /assets/images/food/wonton-mee.jpg
+  price: $4-7
+  emoji: 🍜
+  featured: false
+  tips:
+    - 干捞版比汤版更有本地特色
+    - 可要求加辣椒酱
+    - 叉烧肥瘦可按喜好选择
+
+- name: 咖椰吐司
+  section: 甜品饮品
+  category: 早餐
+  rating: 4
+  description: 炭烤或烘脆吐司夹咖椰酱和黄油，配半熟蛋与咖啡，是新加坡最经典的早餐组合。
+  location: 亚坤 / Toast Box
+  image: /assets/images/food/kaya-toast.jpg
+  price: $3-6
+  emoji: 🍞
+  featured: false
+  tips:
+    - 半熟蛋可加少量酱油和白胡椒
+    - 适合与 Kopi 一起点套餐
+    - 早晨高峰需要排队
+
+- name: 煎蕊
+  section: 甜品饮品
+  category: 甜品
+  rating: 4
+  description: 刨冰上铺绿色米粉、红豆、椰奶和椰糖浆，甜香冰凉，很适合炎热午后解暑。
+  location: Old Amoy Chendol
+  image: /assets/images/food/chendol.jpg
+  price: $2-5
+  emoji: 🍧
+  featured: false
+  tips:
+    - 椰糖香气越浓越地道
+    - 甜度偏高，可多人分食
+    - 适合饭后或下午茶
+
+- name: 冰淇淋夹心面包
+  section: 甜品饮品
+  category: 甜品
+  rating: 4
+  description: 街边小推车售卖的怀旧甜点，用彩色面包或威化夹一大块冰淇淋，口味常见榴莲、玉米和巧克力。
+  location: 乌节路街边摊
+  image: /assets/images/food/ice-cream-sandwich.jpg
+  price: $1.50-3
+  emoji: 🍦
+  featured: false
+  tips:
+    - 彩色面包版本最有本地特色
+    - 榴莲口味味道较浓
+    - 边走边吃很方便
+
+- name: 拉茶
+  section: 甜品饮品
+  category: 饮品
+  rating: 4
+  description: 红茶与炼乳反复拉冲，形成细腻泡沫，茶香和奶甜平衡，常与印度煎饼一起享用。
+  location: 小印度咖啡店 / 熟食中心
+  image: /assets/images/food/teh-tarik.jpg
+  price: $1.50-3
+  emoji: 🧋
+  featured: false
+  tips:
+    - 可点少甜版本
+    - 热饮香气更明显
+    - 适合搭配印度煎饼
+
+- name: 摩摩喳喳
+  section: 甜品饮品
+  category: 甜汤
+  rating: 4
+  description: 椰奶甜汤中加入芋头、番薯、西米和豆类，可冷可热，口感丰富，是南洋甜品代表之一。
+  location: 牛车水甜品店
+  image: /assets/images/food/bubur-cha-cha.jpg
+  price: $3-5
+  emoji: 🍨
+  featured: false
+  tips:
+    - 冷热版本风味不同
+    - 可要求少糖
+    - 饭后作为甜品很合适
+
+- name: 马蹄水
+  section: 甜品饮品
+  category: 饮品
+  rating: 4
+  description: 用马蹄熬煮的清甜饮品，口感清爽，常在熟食中心售卖，适合搭配辛辣或油香小吃。
+  location: 各大熟食中心饮品摊
+  image: /assets/images/food/water-chestnut-drink.jpg
+  price: $1.50-3
+  emoji: 🥤
+  featured: false
+  tips:
+    - 可选择加冰或少冰
+    - 搭配叻沙、炒粿条很解腻
+    - 部分摊位有现煮版本

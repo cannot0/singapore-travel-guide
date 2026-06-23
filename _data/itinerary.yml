@@ -1,0 +1,229 @@
+# Singapore Itinerary Data
+
+- title: 一日游行程
+  description: 紧凑而充实的一天
+  days:
+    - day: 第一天
+      name: 经典新加坡
+      items:
+        - time: "09:00"
+          activity: 鱼尾狮公园
+          description: 打卡新加坡的标志性景点，拍摄经典照片。
+
+        - time: "10:30"
+          activity: 滨海湾金沙
+          description: 参观著名的金沙酒店和购物中心，欣赏滨海湾美景。
+
+        - time: "12:00"
+          activity: 午餐 - 滨海湾美食
+          description: 在金沙美食广场或附近餐厅享用午餐。
+
+        - time: "14:00"
+          activity: 滨海湾花园
+          description: 探索壮观的超级树和室内花园，感受大自然的魅力。
+
+        - time: "17:00"
+          activity: 克拉码头
+          description: 傍晚时分，在克拉码头享受河畔美景和晚餐。
+
+        - time: "19:00"
+          activity: 夜间动物园
+          description: 体验世界首个夜间动物园，近距离观赏夜行动物。
+
+- title: 三日游行程
+  description: 深度体验新加坡
+  days:
+    - day: 第一天
+      name: 城市探索
+      items:
+        - time: "09:00"
+          activity: 鱼尾狮公园 & 滨海湾
+          description: 游览新加坡的标志性景点，欣赏滨海湾美景。
+
+        - time: "12:00"
+          activity: 牛车水午餐
+          description: 在唐人街品尝地道的海南鸡饭和叻沙。
+
+        - time: "14:00"
+          activity: 滨海湾花园
+          description: 探索超级树和室内花园，享受自然之美。
+
+        - time: "18:00"
+          activity: 克拉码头晚餐
+          description: 在河畔餐厅享用晚餐，欣赏夜景。
+
+    - day: 第二天
+      name: 文化体验
+      items:
+        - time: "09:00"
+          activity: 小印度
+          description: 感受印度文化的魅力，参观维拉玛卡里雅曼兴都庙。
+
+        - time: "12:00"
+          activity: 印度美食午餐
+          description: 在香蕉叶芭沙享用正宗的印度咖喱。
+
+        - time: "14:00"
+          activity: 甘榜格南
+          description: 参观苏丹回教堂，探索马来文化区。
+
+        - time: "16:00"
+          activity: 哈芝巷
+          description: 在充满艺术气息的哈芝巷逛街购物。
+
+        - time: "18:00"
+          activity: 阿拉伯街晚餐
+          description: 在阿拉伯街享用中东美食。
+
+    - day: 第三天
+      name: 休闲娱乐
+      items:
+        - time: "09:00"
+          activity: 圣淘沙岛
+          description: 前往圣淘沙岛，开始愉快的一天。
+
+        - time: "10:00"
+          activity: 环球影城
+          description: 体验刺激的游乐设施，观看精彩的表演。
+
+        - time: "13:00"
+          activity: 午餐 - 圣淘沙美食
+          description: 在圣淘沙的餐厅享用午餐。
+
+        - time: "15:00"
+          activity: S.E.A.海洋馆
+          description: 探索海洋世界，观赏各种海洋生物。
+
+        - time: "18:00"
+          activity: 海滩日落
+          description: 在巴拉湾海滩欣赏美丽的日落。
+
+        - time: "20:00"
+          activity: 晚餐 & 返程
+          description: 在圣淘沙享用晚餐，结束愉快的旅程。
+
+- title: 五日游行程
+  description: 全面深度游新加坡
+  days:
+    - day: 第一天
+      name: 市区经典
+      items:
+        - time: "09:00"
+          activity: 鱼尾狮公园
+          description: 打卡新加坡地标，拍摄经典照片。
+
+        - time: "10:30"
+          activity: 滨海湾金沙
+          description: 参观金沙酒店，欣赏滨海湾全景。
+
+        - time: "12:00"
+          activity: 午餐
+          description: 在金沙美食中心用餐。
+
+        - time: "14:00"
+          activity: 滨海湾花园
+          description: 探索超级树和云雾林。
+
+        - time: "17:00"
+          activity: 艺术科学博物馆
+          description: 参观独特的莲花形建筑和展览。
+
+        - time: "19:00"
+          activity: 晚餐
+          description: 在滨海湾享用晚餐。
+
+    - day: 第二天
+      name: 文化探索
+      items:
+        - time: "09:00"
+          activity: 牛车水
+          description: 探索唐人街，参观佛牙寺。
+
+        - time: "11:00"
+          activity: 午餐
+          description: 在牛车水品尝地道美食。
+
+        - time: "13:00"
+          activity: 小印度
+          description: 感受印度文化，参观兴都庙。
+
+        - time: "15:00"
+          activity: 甘榜格南
+          description: 参观苏丹回教堂，探索马来文化。
+
+        - time: "17:00"
+          activity: 哈芝巷
+          description: 逛特色小店，欣赏街头艺术。
+
+        - time: "19:00"
+          activity: 晚餐
+          description: 在阿拉伯街享用美食。
+
+    - day: 第三天
+      name: 自然生态
+      items:
+        - time: "08:00"
+          activity: 新加坡动物园
+          description: 与各种动物亲密接触。
+
+        - time: "12:00"
+          activity: 午餐
+          description: 在动物园内餐厅用餐。
+
+        - time: "14:00"
+          activity: 河川生态园
+          description: 探索世界各地的河流生态。
+
+        - time: "16:00"
+          activity: 夜间动物园
+          description: 体验夜间动物世界。
+
+        - time: "19:00"
+          activity: 晚餐
+          description: 在动物园附近餐厅用餐。
+
+    - day: 第四天
+      name: 圣淘沙休闲
+      items:
+        - time: "09:00"
+          activity: 环球影城
+          description: 体验电影主题的游乐设施。
+
+        - time: "13:00"
+          activity: 午餐
+          description: 在圣淘沙美食街用餐。
+
+        - time: "15:00"
+          activity: S.E.A.海洋馆
+          description: 探索海洋世界。
+
+        - time: "18:00"
+          activity: 海滩日落
+          description: 在巴拉湾海滩欣赏日落。
+
+        - time: "20:00"
+          activity: 晚餐
+          description: 在圣淘沙享用晚餐。
+
+    - day: 第五天
+      name: 购物休闲
+      items:
+        - time: "09:00"
+          activity: 乌节路
+          description: 在新加坡著名的购物街逛街。
+
+        - time: "12:00"
+          activity: 午餐
+          description: 在乌节路餐厅用餐。
+
+        - time: "14:00"
+          activity: 植物园
+          description: 在新加坡植物园散步。
+
+        - time: "16:00"
+          activity: 国家胡姬花园
+          description: 欣赏美丽的胡姬花。
+
+        - time: "18:00"
+          activity: 晚餐 & 返程
+          description: 享用晚餐，结束旅程。
