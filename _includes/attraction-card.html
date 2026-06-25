@@ -1,14 +1,12 @@
 <div class="attraction-card">
   {% if include.image %}
     <div class="card-image">
-      <img src="{{ include.image | relative_url }}" alt="{{ include.title }}">
+      <img src="{{ include.image | relative_url }}" alt="{{ include.title }}" style="width:100%;height:100%;object-fit:cover;">
     </div>
   {% endif %}
 
   <div class="card-content">
-    <h3 class="card-title">
-      <a href="{{ include.url | relative_url }}">{{ include.title }}</a>
-    </h3>
+    <h3 class="card-title">{{ include.title }}</h3>
 
     {% if include.category %}
       <span class="card-category">{{ include.category }}</span>
@@ -16,7 +14,19 @@
 
     {% if include.rating %}
       <div class="card-rating">
-        <span class="rating-stars">{{ '★' * include.rating }}{{ '☆' * (5 - include.rating) }}</span>
+        <span class="rating-stars">
+          {% assign full_stars = include.rating | floor %}
+          {% assign half_val = include.rating | minus: full_stars %}
+          {% for i in (1..5) %}
+            {% if i <= full_stars %}
+              ★
+            {% elsif i == full_stars | plus: 1 and half_val >= 0.5 %}
+              ★
+            {% else %}
+              ☆
+            {% endif %}
+          {% endfor %}
+        </span>
       </div>
     {% endif %}
 
@@ -25,14 +35,11 @@
     {% endif %}
 
     {% if include.location %}
-      <div class="card-location">
-        <span class="icon">📍</span>
-        <span>{{ include.location }}</span>
-      </div>
+      <div class="card-location">📍 {{ include.location }}</div>
     {% endif %}
 
     {% unless include.hide_link %}
-    <a href="{{ include.url | relative_url }}" class="card-link">查看详情 →</a>
+      <a href="{{ include.url | relative_url }}" class="card-link">查看详情 →</a>
     {% endunless %}
   </div>
 </div>
