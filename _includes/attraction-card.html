@@ -1,45 +1,48 @@
 <div class="attraction-card">
-  {% if include.image %}
-    <div class="card-image">
-      <img src="{{ include.image | relative_url }}" alt="{{ include.title }}" style="width:100%;height:100%;object-fit:cover;">
+  <div class="card-image">
+    {% if include.image %}
+      <img
+        src="{{ include.image | relative_url }}"
+        alt="{{ include.title }}"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        style="width:100%;height:100%;object-fit:cover;border-radius:6px 6px 0 0;"
+      >
+    {% endif %}
+    <!-- 图片加载失败兜底渐变 -->
+    <div
+      aria-hidden="true"
+      style="width: 100%; height: 100%; min-height: 200px; {% if include.image %}display: none;{% else %}display: flex;{% endif %} align-items: center; justify-content: center; background: linear-gradient(135deg, #10b981 0%, #059669 100%); font-size: 4rem;"
+    >
+      🏙️
     </div>
-  {% endif %}
+  </div>
 
   <div class="card-content">
-    <h3 class="card-title">{{ include.title }}</h3>
-
     {% if include.category %}
       <span class="card-category">{{ include.category }}</span>
     {% endif %}
 
     {% if include.rating %}
+      {% assign rating_value = include.rating | plus: 0 %}
       <div class="card-rating">
-        <span class="rating-stars">
-          {% assign full_stars = include.rating | floor %}
-          {% assign half_val = include.rating | minus: full_stars %}
-          {% for i in (1..5) %}
-            {% if i <= full_stars %}
-              ★
-            {% elsif i == full_stars | plus: 1 and half_val >= 0.5 %}
-              ★
-            {% else %}
-              ☆
-            {% endif %}
-          {% endfor %}
+        <span class="rating-stars" aria-label="{{ rating_value }}星">
+          {% for i in (1..5) %}{% if i <= rating_value %}★{% else %}☆{% endif %}{% endfor %}
         </span>
       </div>
     {% endif %}
 
+    <h3 class="card-title">{{ include.title }}</h3>
+
     {% if include.description %}
-      <p class="card-description">{{ include.description | truncate: 100 }}</p>
+      <p class="card-description">{{ include.description }}</p>
     {% endif %}
 
     {% if include.location %}
-      <div class="card-location">📍 {{ include.location }}</div>
+      <div class="card-location">
+        <span class="icon">📍</span>
+        <span>{{ include.location }}</span>
+      </div>
     {% endif %}
-
-    {% unless include.hide_link %}
-      <a href="{{ include.url | relative_url }}" class="card-link">查看详情 →</a>
-    {% endunless %}
+    <!-- 已删除查看详情链接 -->
   </div>
 </div>
